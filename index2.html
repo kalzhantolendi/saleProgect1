@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Cleaning</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"> -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            z-index: -1;
+            background-color: #9fcdf5;
+        }
+       
+        .hero1 {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    border-bottom: solid 3px #81c3fcd4;
+    border-top: solid 5px #81c3fcd4;
+}
+
+/* Контентная часть */
+.hero-text1 {
+    max-width: 50%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-text1 h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.hero-text1 p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.hero-text1 .learn-more {
+    padding: 10px 20px;
+    border-radius: 7%;
+    margin-top: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.hero-text1 .learn-more:hover {
+    transform: scale(1.1);
+}
+
+/* Картинка */
+.hero-image1 img {
+    width: 500px;
+    height: 400px;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* --- Мобильная адаптация --- */
+@media (max-width: 768px) {
+    .hero1 {
+        flex-direction: column; /* Ставим контент вертикально */
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .hero-text1 {
+        max-width: 100%;
+    }
+
+    .hero-text1 h1 {
+        font-size: 2rem; /* Уменьшаем заголовок */
+    }
+
+    .hero-text1 p {
+        font-size: 1rem; /* Уменьшаем текст */
+    }
+
+    .hero-text1 .learn-more {
+      padding: 8px 16px;
+        font-size: 1rem;
+    }
+
+    .hero-image1 img {
+        width: 100%; /* Делаем картинку адаптивной */
+        max-width: 350px;
+        height: auto;
+        margin-top: 20px;
+    }
+}
+
+
+
+        .container2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        max-width: 900px;
+        padding: 20px;
+        margin-left: 200px;
+    }
+    .card2 {
+        width: 430px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+    .card2:hover {
+        transform: translateY(-5px);
+    }
+    .icon1 {
+        font-size: 40px;
+    }
+
+
+    @media (max-width: 768px) {
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -20px;
+    }
+
+    .card2 {
+        width: 90%; /* Slight padding on the sides */
+        max-width: 350px; /* Prevents it from being too wide */
+        text-align: center; /* Centers content */
+    }
+
+    .icon1 {
+        font-size: 35px;
+    }
+}
+
+
+
+
+
+
+
+
+    .blue { border-left: 5px solid blue; }
+    .green { border-left: 5px solid green; }
+    .yellow { border-left: 5px solid yellow; }
+    .red { border-left: 5px solid red; }
+
+        
+    </style>
+</head>
+<body>
+  <!-- <div data-aos="fade-up">Контент</div> -->
+    <header class="header">
+        <div class="logo"><img style="width:100px; " src="image-fotor-bg-remover-2025022418324.png" alt=""></div>
+        <nav class="nav">
+          <ul>
+            <li><a  href="./index.html" class="lang" data-key="nav-home">Главная</a></li>
+            <li><a  href="./index.html" class="lang" data-key="nav-services">Услуги</a></li>
+            <li><a  href="./index.html" class="lang" data-key="nav-why-us">Почему мы?</a></li>
+            <li><a href="./index.html" class="lang" data-key="nav-contact">Контакты</a></li>
+          </ul>
+        </nav>
+       <!-- Переключатель языков -->
+  
+        <div class="burger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+      </header>
+    
+        <section class="sale">
+            <div class="over1ay"></div>
+            <div class="content7">
+                <div class="content">
+                    <h1>ВЫГОДНАЯ УБОРКА</h1>
+                    <p>ДОПОЛНИТЕЛЬНАЯ СКИДКА ДО <span>20%</span></p>
+                  
+                </div>
+            </div>
+          
+          </section>
+
+
+    
+    <section class="hero1">
+        <div class="hero-text1">
+            <h1 > ПРОФЕССИОНАЛЬНАЯ <br> УБОРКА</h1>
+            <p>ЧИСТОТА И КОМФОРТ ВАШЕГО ДОМА И ОФИСА</p>
+            <p>Идеальная чистота без лишних забот</p>
+            <!-- <button class="learn-more"> Заказать уборку</button> -->
+        </div>
+        <div class="hero-image1">
+            <img src="Screenshot_2025-03-04_130005-removebg-preview.png" alt="Cleaning Character">
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="timeline">
+        <div class="container">
+          <!--     ITEM 1  -->
+          <div class="timeline-item " data-aos="fade-right">
+            <div class="timeline-img"></div>
+      
+            <div class="timeline-content js--fadeInRight" style="width: 500px; margin-left: 117px;">
+              <h2>🧹 Глубокая уборка квартир и домов</h2>
+              <p>
+                — Чистка всех поверхностей, включая труднодоступные места
+                — Удаление пыли, грязи и пятен
+                — Дезинфекция и устранение неприятных запахов
+                — Химчистка мебели и ковров
+            </p>
+            </div>
+          </div> 
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-img"></div>
+
+            <div class="timeline-content js--fadeInLeft"  style="width: 500px; margin-right: 115px;">
+               
+             <img src="./image sp/istockphoto-1449364000-612x612.jpg" style="width: 200px; height: 120px;" alt="">
+             <img src="./image sp/cleaningHouse.jpg" style="width: 200px; height: 120px;" alt="">
+            
+           
+            </div>
+          </div> 
+      
+          <!--     ITEM 2  -->
+          <div class="timeline-item " data-aos="fade-right">
+            <div class="timeline-img"></div>
+      
+            <div class="timeline-content js--fadeInRight"  style="width: 500px; margin-left: 117px;">
+              <h2>🪟 Мытьё окон и фасадов</h2>
+              <p>— Чистка окон с двух сторон
+                — Удаление разводов и следов загрязнений
+                — Очистка фасадов от пыли и грязи
+                — Полировка стеклянных поверхностей</p>
+            </div>
+          </div>   
+
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-img"></div>
+
+            <div class="timeline-content js--fadeInLeft" style="width: 500px; margin-right: 115px;">
+               
+             <img src="./image sp/washwind.jpg"  style="width: 200px; height: 120px;" alt="">
+             <img src="./image sp/wrapwind.jpg" style="width: 200px; height: 120px;" alt="">
+            
+           
+            </div>
+          </div> 
+      
+          <!--     ITEM 1  -->
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-img"></div>
+      
+            <div class="timeline-content js--fadeInRight"  style="width: 500px; margin-left: 117px;">
+              <h2>🚧 Уборка после ремонта и строительства</h2>
+              <p>— Удаление строительной пыли и мусора
+                — Очистка стен, потолков, полов и мебели
+                — Мытьё окон и дверей от остатков краски и клея
+                — Подготовка помещения к въезду</p>
+            </div>
+          </div> 
+      
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-img"></div>
+
+            <div class="timeline-content js--fadeInLeft" style="width: 500px; margin-right: 115px;">
+               
+             <img src="./image sp/beforeafter2.jpg"  style="width: 200px; height: 120px;" alt="">
+             <img src="./image sp/beforeafter.jpg" style="width: 200px; height: 120px;" alt="">
+            
+           
+            </div>
+          </div> 
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div  style="text-align: center;
+      margin-bottom: 20px;  color: yellow;"><h1><strong>Виды и типы скидок %</strong></h1></div>
+      
+      <div class="container2">
+        <div class="card2 blue">
+            <div class="icon1">🧹</div>
+            <!-- <img src="image-shape.png" alt="" style="width: 220px; height: 160px;"> -->
+            <h2>Второй заказ – скидка 15%!</h2>
+            <p>Воспользуйтесь нашей услугой во второй раз и получите скидку в размере<i>15%</i> на генеральную уборку!</p>
+        </div>
+        <div class="card2 green">
+            <div class="icon1">👫</div>
+            <!-- <img src="Adobe Express - file.png" style="width: 300px;" alt=""> -->
+            <h2>Приведи друга – получи уборку в подарок!</h2>
+            <p>Приведите друга, и мы сделаем вам бесплатную уборку одной комнаты!</p>
+        </div>
+        <div class="card2 yellow">
+            <div class="icon1">📅</div>
+            <!-- <img src="Screenshot 2025-03-04 120555.png" style="width: 300px;"  alt=""> -->
+            <h2>Абонемент на чистоту – экономьте до 30%!</h2>
+            <p>Закажите уборку 4 раза в месяц и получите скидку 30%!</p>
+        </div>
+        <div class="card2 red">
+            <div class="icon1">🎉</div>
+            <!-- <img src="Screenshot 2025-03-04 122416.png" style="width: 200px; height: 170px; margin-left: 20px;"  alt=""> -->
+            <h2>Чистота перед праздником – подарок для вас!</h2>
+            <p>Закажите уборку перед праздником, и мы почистим ваш диван бесплатно!</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Подвал (Footer) -->
+ <div class="social-chat">
+    
+    <div class="social-links">
+        <a href="https://wa.me/7019767776" target="_blank" class="whatsapp">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"> WhatsApp
+        </a>
+        <a href="https://t.me/FAMILYBCLEANING" target="_blank" class="telegram">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"> Telegram
+        </a>
+        <a href="https://www.instagram.com/taza_line_/" target="_blank" class="instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"> Instagram
+        </a>
+    </div>
+  </div> 
+
+
+
+
+ <!-- Floating Social Chat Bubble -->
+ <div class="contact-container" style="z-index: 3;">
+    <div class="contact-info">
+        <h2>Не стесняйтесь обращаться к нам по любому вопросу.</h2>
+        <p>Мы гордимся своей работой и ценим доверие наших клиентов.
+          С TAZA LINE CLEAN COMPANY чистота <br>становится образом жизни!</p>
+        
+          <div class="contact-details">
+            <div class="bireyi">
+              <div class="info1">
+                  <img src="./image sp/map-pin 1.png" alt="Office Address">
+                  <strong>Официальный адрес:</strong>
+                  <p>122 Толе би, Тараз</p>
+              </div>
+              
+              <div class="info1">
+                  <img src="./image sp/mail 1.png" alt="Mail Address">
+                  <strong>Электонный почта:</strong>
+                  <p>Taza_Line@gmail.com<br>Taza@company.com</p>
+              </div>
+            </div>
+          <div class="ekeyi">
+              <div class="info1">
+                  <img src="./image sp/phone 1.png" alt="Phone No">
+                  <strong>Телефон:</strong>
+                  <p>Приниматель: 8701-976-77-76<br>Меннеджер: 8474- 410-04-51</p>
+              </div>
+              
+              <div class="info1">
+                  <img src="./image sp/time-svgrepo-com 1.png" alt="Opening Time">
+                  <strong>Ежедневно:</strong>
+                  <p>08:00 – 20:00 </p>
+          </div>
+        </div>
+        </div>
+      </div>
+
+    <div class="contact-form">
+      <form action="#" method="post">
+          <div class="row">
+              <input type="text" placeholder="Имя" required>
+              <input type="text" placeholder="Фамилия" required>
+          </div>
+          <div class="row">
+              <input type="email" placeholder="Электронная почта" required>
+              <input type="tel" placeholder="Телефон" required>
+          </div>
+          <input type="text" placeholder="Адрес" class="Address">
+          <textarea placeholder="Сообщение" required></textarea>
+          <button type="submit" class="send">Отправлять</button>
+      </form>
+  </div>
+  
+  
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+
+  <footer class="footer">
+    <div class="company-info">
+      <p><strong>© 2024 TAZA LINE CLEAN COMPANY</strong></p>
+      <p>Профессиональные клининговые услуги для вашего дома и офиса</p>
+  </div>
+
+
+
+  <div class="working-hours">
+      <p><strong>🕒 Рабочие часы:</strong> Пн-Сб 08:00 - 20:00 | Вс - выходной</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+<script>
+
+  const ctaButton = document.querySelector(".send");
+  
+  ctaButton.addEventListener("click", () => {
+      alert("Отправлено!");
+      window.location.href = "index2.html"; // Перенаправление после нажатия "ОК"
+  });
+
+
+
+
+
+  
+const burger = document.querySelector(".burger");
+const nav = document.querySelector(".nav");
+
+burger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  burger.classList.toggle("active");
+});
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
